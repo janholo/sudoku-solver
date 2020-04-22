@@ -1,6 +1,6 @@
 # SudokuSolver
 
-This is a sudoku solver written in react with material-ui
+This is a sudoku solver written in react with material-ui.
 
 ## Available Scripts
 
