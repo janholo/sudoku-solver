@@ -1,0 +1,22 @@
+.fieldContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;;
+}
+
+.fieldContainer::before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+
+.field {
+    border-style: solid;
+    border-color: black;
+    border-width: 0.01vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
