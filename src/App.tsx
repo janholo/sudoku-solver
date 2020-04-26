@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import logo from './logo.png'
-import { AppBar, Toolbar, IconButton, Typography, Grid, Paper, Container } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Typography, Grid, Paper, Container, Stepper, Step, StepLabel } from '@material-ui/core';
 import { Board } from './components/Board';
 import { getRandomBoardState } from './logic/Sudoku';
 
@@ -34,6 +34,17 @@ function App() {
   return (
     <React.Fragment>
       <NavBar />
+      <Stepper activeStep={1}>
+          <Step key="0" completed={true}>
+            <StepLabel>Enter numbers</StepLabel>
+          </Step>
+          <Step key="1">
+            <StepLabel>Solve Sudoku</StepLabel>
+          </Step>
+          <Step key="2">
+            <StepLabel>Done</StepLabel>
+          </Step>
+      </Stepper>
       <Grid container spacing={3}>
         <Grid item md={6} sm={12}>
           <Container>
